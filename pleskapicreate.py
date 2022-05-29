@@ -42,9 +42,9 @@ def submit():
     
     header={"Accept": "*/*",
                 "Content-Type": "application/json"}
-                #"X-API-Key": "05265d25-6b62-a714-06c7-ecdd260915b4"}
+                #"X-API-Key": "APIKEY"}
     url="https://hardcore-jang.208-109-191-71.plesk.page:8443"
-    createcusturl="https://hardcore-jang.208-109-191-71.plesk.page:8443/api/v2/clients"
+    createcusturl="PLESKURL/api/v2/clients"
     custreqbody={
         "name": custname,
         "login": user,
@@ -63,7 +63,7 @@ def submit():
     custid=print(api_data['id'])
     custguid=print(api_data['guid'])
 
-    createdomainurl="https://hardcore-jang.208-109-191-71.plesk.page:8443/api/v2/domains"
+    createdomainurl="PLESKURL/api/v2/domains"
 
     domaincreatebody={
 
@@ -79,10 +79,10 @@ def submit():
         "guid": custguid
         },
         "ip_addresses": [
-        "208.109.191.71"
+        "PLESKIP"
         ],
         "ipv4": [
-        "208.109.191.71"
+        "PLESKIP"
         ],
         "plan": {
         "name": "Default Domain"
@@ -102,7 +102,7 @@ def submit():
     domainname_var.set("")
     #ownerpleskuser_var.set("")
     #ownerpleskpass_var.set("")
-    p=subprocess.Popen(["powershell.exe", "C:\\Users\\14699\\Documents\\PythonScripts\\crismw.ps1"], stdout=sys.stdout)
+    p=subprocess.Popen(["powershell.exe", "C:\\Users\\14699\\Documents\\PythonScripts\\plesk.ps1"], stdout=sys.stdout)
     p.communicate()
     print(user)
     print(custpassword)
