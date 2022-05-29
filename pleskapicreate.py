@@ -102,7 +102,7 @@ def submit():
     domainname_var.set("")
     #ownerpleskuser_var.set("")
     #ownerpleskpass_var.set("")
-    p=subprocess.Popen(["powershell.exe", "C:\\Users\\14699\\Documents\\PythonScripts\\plesk.ps1"], stdout=sys.stdout)
+    p=subprocess.Popen(["powershell.exe", "C:\\Users\\14699\\Documents\\PythonScripts\\pleskrdp.ps1"], stdout=sys.stdout)
     p.communicate()
     print(user)
     print(custpassword)
