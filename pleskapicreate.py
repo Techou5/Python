@@ -43,7 +43,7 @@ def submit():
     header={"Accept": "*/*",
                 "Content-Type": "application/json"}
                 #"X-API-Key": "APIKEY"}
-    url="https://hardcore-jang.208-109-191-71.plesk.page:8443"
+    url="PLESKURL"
     createcusturl="PLESKURL/api/v2/clients"
     custreqbody={
         "name": custname,
